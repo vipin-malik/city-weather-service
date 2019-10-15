@@ -1,0 +1,42 @@
+{
+  "cities": [
+    {
+      "id": "1",
+      "name": "London"
+    },
+    {
+      "id": "2",
+      "name": "Delhi"
+    }
+  ],
+  "predictions": [
+    {
+      "city_id": "1",
+      "date": "15-10-2019",
+      "temprature": {
+        "value": "23.9",
+        "unit": "celsius"
+      },
+      "rain_type" : "normal"
+    },
+    {
+      "city_id": "1",
+      "date": "16-10-2019",
+      "temprature": {
+        "value": "40.5",
+        "unit": "celsius"
+      },
+      "rain_type": "normal"
+    },
+    {
+      "city_id": "1",
+      "date": "17-10-2019",
+      "temprature": {
+        "value": "30",
+        "unit": "celsius"
+      },
+      "rain_type": "rainy"
+    }
+  ]
+}
+
