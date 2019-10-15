@@ -1,5 +1,6 @@
 ﻿using CityTempService.BusinessLogic.Enums;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 
 namespace CityTempService.BusinessLogic.Models
@@ -16,6 +17,7 @@ namespace CityTempService.BusinessLogic.Models
         public Temprature Temprature { get; set; }
 
         [JsonProperty(PropertyName = "rain_type")]
+        [JsonConverter(typeof(StringEnumConverter))]
         public RainType RainType { get; set; }
 
         [JsonProperty(PropertyName = "suggestion")]

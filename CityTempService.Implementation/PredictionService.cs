@@ -30,7 +30,7 @@ namespace CityTempService.Implementation
                 {
                     item.Suggestion = "Carry umbrella";
                 }
-                else if (item.Temprature != null && item.Temprature.Value > 40)
+                else if (item.Temprature != null && item.Temprature.HighValue > 40)
                 {
                     item.Suggestion = "Use sunscreen lotion";
                 }

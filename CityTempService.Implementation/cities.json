@@ -14,7 +14,8 @@
       "city_id": "1",
       "date": "15-10-2019",
       "temprature": {
-        "value": "23.9",
+        "low_value": "23.9",
+        "high_value": "38.9",
         "unit": "celsius"
       },
       "rain_type" : "normal"
@@ -23,7 +24,8 @@
       "city_id": "1",
       "date": "16-10-2019",
       "temprature": {
-        "value": "40.5",
+        "low_value": "28",
+        "high_value": "40.5",
         "unit": "celsius"
       },
       "rain_type": "normal"
@@ -32,7 +34,8 @@
       "city_id": "1",
       "date": "17-10-2019",
       "temprature": {
-        "value": "30",
+        "low_value": "22",
+        "high_value": "29",
         "unit": "celsius"
       },
       "rain_type": "rainy"
