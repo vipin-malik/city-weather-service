@@ -27,7 +27,15 @@ namespace CityTempService.Controllers
         public ActionResult<IList<Prediction>> GetPredictions([FromQuery]int cityid)
         {
             _logger.LogInformation("Begin::GetPredictions");
+            if (cityid <= 0)
+            {
+                return BadRequest("Invalid City Code.");
+            }
             var list = _predictionManager.GetPredictions(cityid);
+            if (list == null || list.Count == 0)
+            {
+                return NotFound("No Predictions found for the given city " + cityid);
+            }
             _logger.LogInformation("End::GetPredictions");
             return Ok(list);
         }

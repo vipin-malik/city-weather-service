@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CityTempService.Implementation;
 using CityTempService.Managers;
+using CityTempService.Middlewares;
 using CityTempService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -59,6 +60,7 @@ namespace CityTempService
             //});
 
             app.UseMvc();
+            app.UseMiddleware<ExceptionMiddleware>();
         }
     }
 }
