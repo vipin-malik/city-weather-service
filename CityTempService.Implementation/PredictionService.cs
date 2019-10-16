@@ -26,7 +26,7 @@ namespace CityTempService.Implementation
             }
             foreach (var item in list)
             {
-                if (item.RainType == RainType.Rainy)
+                if (item.WeatherType == WeatherType.Rainy)
                 {
                     item.Suggestion = "Carry umbrella";
                 }

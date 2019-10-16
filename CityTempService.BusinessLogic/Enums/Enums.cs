@@ -11,7 +11,7 @@ namespace CityTempService.BusinessLogic.Enums
         [JsonProperty(PropertyName = "kelvin")]
         Kelvin
     }
-    public enum RainType
+    public enum WeatherType
     {
         [JsonProperty(PropertyName = "normal")]
         Normal,

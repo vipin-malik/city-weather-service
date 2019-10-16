@@ -16,9 +16,9 @@ namespace CityTempService.BusinessLogic.Models
         [JsonProperty(PropertyName = "temprature")]
         public Temprature Temprature { get; set; }
 
-        [JsonProperty(PropertyName = "rain_type")]
+        [JsonProperty(PropertyName = "weather_type")]
         [JsonConverter(typeof(StringEnumConverter))]
-        public RainType RainType { get; set; }
+        public WeatherType WeatherType { get; set; }
 
         [JsonProperty(PropertyName = "suggestion")]
         public string Suggestion { get; set; }
